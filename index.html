@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Goit-markup-homework-6</title>
+    <title>Goit-markup-homework-7</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -100,13 +100,19 @@
           <h2 class="section-two-title">What are we doing</h2>
           <ul class="list section-two-container">
             <li class="section-two-item">
-              <img src="./images/desktop.jpg" alt="desktop" width="360" />
+              <picture>
+                <img src="./images/doing/desktop.jpg" alt="desktop" width="360" />
+              </picture>
             </li>
             <li class="section-two-item">
-              <img src="./images/phones.jpg" alt="phones" width="360" />
+              <picture>
+                <img src="./images/doing/phones.jpg" alt="phones" width="360" />
+              </picture>
             </li>
             <li class="section-two-item">
-              <img src="./images/layout.jpg" alt="layout" width="360" />
+              <picture>
+                <img src="./images/doing/layout.jpg" alt="layout" width="360" />
+              </picture>
             </li>
           </ul>
         </div>
@@ -116,7 +122,12 @@
           <h2 class="section-three-title">Our Team</h2>
           <ul class="list section-three-container">
             <li class="section-three-wrapper">
-              <img src="./images/team-1.jpg" alt="team-1" width="264" />
+              <picture>
+                <source srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x" media="(max-width:767px)">
+                <img src="./images/team-1.jpg" alt="team-1" width="264" />
+              </picture>
               <div class="section-three-description">
                 <h3 class="section-three-team">Mark Guerrero</h3>
                 <p class="section-three-text">Product Designer</p>
@@ -153,7 +164,12 @@
               </div>
             </li>
             <li class="section-three-wrapper">
-              <img src="./images/team-2.jpg" alt="team-2" width="264" />
+              <picture>
+                <source srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x" media="(max-width:767px)">
+                <img src="./images/team-2.jpg" alt="team-2" width="264" />
+              </picture>
               <div class="section-three-description">
                 <h3 class="section-three-team">Tom Ford</h3>
                 <p class="section-three-text">Frontend Developer</p>
@@ -190,7 +206,12 @@
               </div>
             </li>
             <li class="section-three-wrapper">
-              <img src="./images/team-3.jpg" alt="team-3" width="264" />
+              <picture>
+                <source srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x" media="(max-width:767px)">
+                <img src="./images/team-3.jpg" alt="team-3" width="264" />
+              </picture>
               <div class="section-three-description">
                 <h3 class="section-three-team">Camila Garcia</h3>
                 <p class="section-three-text">Marketing</p>
@@ -227,7 +248,12 @@
               </div>
             </li>
             <li class="section-three-wrapper">
-              <img src="./images/team-4.jpg" alt="team-4" width="264" />
+              <picture>
+                <source srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x" media="(max-width:767px)">
+                <img src="./images/team-4.jpg" alt="team-4" width="264" />
+              </picture>
               <div class="section-three-description">
                 <h3 class="section-three-team">Daniel Wilson</h3>
                 <p class="section-three-text">UI Designer</p>
