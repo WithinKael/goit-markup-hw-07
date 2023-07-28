@@ -74,7 +74,8 @@ header {
   .header-list {
     display: flex;
     column-gap: 40px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .header-list-link {
@@ -120,6 +121,10 @@ header {
 @media screen and (min-width: 1158px) {
   .header-container {
     justify-content: space-between;
+  }
+
+  .header-list {
+    margin-left: 76px;
   }
 
   .header-address-contact {
