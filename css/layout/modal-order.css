@@ -1,0 +1,296 @@
+/* ======================= MODAL WINDOW ================== */
+
+.modal.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: fixed;
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(46, 47, 66, 0.4);
+  transition-property: visibility, opacity;
+  transition-duration: var(--timing-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.backdrop {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 392px;
+  min-height: 584px;
+  border-radius: 4px;
+  background: var(--dairy);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  transition: transform var(--timing-duration) var(--timing-function);
+  padding: 72px 16px 24px 16px;
+}
+
+.close-button {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cornflower);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition-property: background-color, border;
+  transition-duration: var(--timing-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.close-button-svg {
+  transition: fill var(--timing-duration) var(--timing-function);
+}
+
+.close-button:focus .close-button-svg {
+  fill: var(--white);
+}
+
+.close-button:focus {
+  background-color: var(--ocean);
+  border: none;
+}
+/* ======================= FORM ========================= */
+
+.modal-text {
+  color: var(--navy-blue);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.form-container {
+  margin-bottom: 8px;
+}
+
+.form-container-comment {
+  margin-bottom: 16px;
+}
+
+.form-container-label {
+  display: block;
+  color: var(--light-slate);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+
+.form-container-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  color: var(--navy-blue-modal);
+  font-size: 12px;
+  margin-top: 4px;
+  padding: 11px 38px;
+  outline: transparent;
+  transition-property: border-color;
+  transition-duration: var(--timing-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.form-container-input:focus {
+  border-color: var(--iris);
+}
+.form-container-input:focus + .input-icon {
+  fill: var(--iris);
+}
+
+.form-container-input::placeholder {
+  color: var(--navy-blue-modal);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.wrapper-icon {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition-property: fill;
+  transition-duration: var(--timing-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.form-container-textarea {
+  display: inline-block;
+  margin-top: 4px;
+  width: 100%;
+  height: 120px;
+  padding: 8px 16px;
+  resize: none;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  outline: transparent;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: var(--timing-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.form-container-textarea:focus {
+  border-color: var(--iris);
+}
+
+.form-container-textarea::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--navy-blue-modal);
+}
+
+.form-container-textarea:focus {
+  border: 1px solid var(--iris);
+}
+
+.checkbox-wrapper {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.input-checked {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition-property: border;
+  transition-duration: var(--timing-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.checkbox-label {
+  display: block;
+  align-items: center;
+  color: var(--light-slate);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+
+.checkbox-custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  margin-right: 8px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: background-color, border, fill;
+  transition-duration: var(--timing-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.checkbox-icon {
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+  transition-duration: var(--timing-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.input-checked:checked + .checkbox-label .checkbox-custom {
+  background-color: var(--ocean);
+  border: none;
+  fill: var(--cloud);
+}
+
+.input-checked:checked + .checkbox-label .checkbox-custom .checkbox-icon {
+  opacity: 1;
+  visibility: visible;
+}
+
+.privacy-link {
+  color: var(--iris);
+  text-decoration: underline;
+}
+
+.submit-button {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  min-width: 169px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 16px 32px;
+  border-radius: 4px;
+  color: var(--white);
+  background-color: var(--iris);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition-property: background-color;
+  transition-duration: var(--timing-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.submit-button:focus {
+  background-color: var(--ocean);
+}
+
+@media only screen and (min-width: 768px) {
+  .backdrop {
+    width: 408px;
+    padding: 72px 25px 24px 23px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .backdrop {
+    padding: 72px 24px 24px 24px;
+  }
+
+  .close-button:hover .close-button-svg {
+    fill: var(--white);
+  }
+
+  .close-button:hover {
+    background-color: var(--ocean);
+    border: none;
+  }
+
+  .submit-button:hover {
+    background-color: var(--ocean);
+  }
+}

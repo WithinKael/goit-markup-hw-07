@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
@@ -23,14 +24,19 @@
         </nav>
         <address class="header-contacts">
           <ul class="list address-list">
-            <li>
+            <li class="address-item">
               <a class="header-address-contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li>
+            <li class="address-item">
               <a class="header-address-contact link" href="tel:+110001111111">+11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
+        <button class="button-burger js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="burger-icon" width="32" height="22">
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -58,7 +64,12 @@
             <li class="gallary-item">
               <a class="link gallary-link" href="">
                 <div class="gallary-wrapper-overlay">
-                  <img src="./images/portfolio/desktop/portfolio-1.jpg" alt="portfolio-1" width="360" />
+                  <picture>
+                    <source srcset="./images/portfolio/desktop/port-1.jpg 1x, ./images/portfolio/desktop/port-1@2x.jpg 2x" media="(min-width: 1158px)">
+                    <source srcset="./images/portfolio/tablet/tport-1.jpg 1x, ./images/portfolio/tablet/tport-1@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio/mobile/mport-1.jpg 1x, ./images/portfolio/mobile/mport-1@2x.jpg 2x" media="(max-width: 767px)">
+                    <img src="./images/portfolio/desktop/port-1.jpg" alt="portfolio-1" width="360" />
+                  </picture>
                   <p class="gallary-wrapper-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                   Cloud Storage App</p>
                 </div>
@@ -71,7 +82,15 @@
             <li class="gallary-item">
               <a class="link gallary-link" href="">
                 <div class="gallary-wrapper-overlay">
-                  <img src="./images/portfolio/desktop/portfolio-2.jpg" alt="portfolio-1" width="360" />
+                  <picture>
+                    <source srcset="./images/portfolio/desktop/port-2.jpg 1x, ./images/portfolio/desktop/port-2@2x.jpg 2x"
+                    media="(min-width: 1158px)">
+                    <source srcset="./images/portfolio/tablet/tport-2.jpg 1x, ./images/portfolio/tablet/tport-2@2x.jpg 2x"
+                    media="(min-width: 768px)">
+                    <source srcset="./images/portfolio/mobile/mport-2.jpg 1x, ./images/portfolio/mobile/mport-2@2x.jpg 2x"
+                    media="(max-width: 767px)">
+                    <img src="./images/portfolio/desktop/port-2.jpg" alt="portfolio-2" width="360" />
+                  </picture>
                   <p class="gallary-wrapper-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · 
                   Cloud Storage App</p>
                 </div>
@@ -84,7 +103,15 @@
             <li class="gallary-item">
               <a class="link gallary-link" href="">
                 <div class="gallary-wrapper-overlay">
-                  <img src="./images/portfolio/desktop/portfolio-3.jpg" alt="portfolio-1" width="360" />
+                  <picture>
+                    <source srcset="./images/portfolio/desktop/port-3.jpg 1x, ./images/portfolio/desktop/port-3@2x.jpg 2x"
+                    media="(min-width: 1158px)">
+                    <source srcset="./images/portfolio/tablet/tport-3.jpg 1x, ./images/portfolio/tablet/tport-3@2x.jpg 2x"
+                    media="(min-width: 768px)">
+                    <source srcset="./images/portfolio/mobile/mport-3.jpg 1x, ./images/portfolio/mobile/mport-3@2x.jpg 2x"
+                    media="(max-width: 767px)">
+                    <img src="./images/portfolio/desktop/port-3.jpg" alt="portfolio-3" width="360" />
+                  </picture>
                   <p class="gallary-wrapper-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                   Cloud Storage App</p>
                 </div>
@@ -97,7 +124,15 @@
             <li class="gallary-item">
               <a class="link gallary-link" href="">
                 <div class="gallary-wrapper-overlay">
-                  <img src="./images/portfolio/desktop/portfolio-4.jpg" alt="portfolio-1" width="360" />
+                  <picture>
+                    <source srcset="./images/portfolio/desktop/port-4.jpg 1x, ./images/portfolio/desktop/port-4@2x.jpg 2x"
+                    media="(min-width: 1158px)">
+                    <source srcset="./images/portfolio/tablet/tport-4.jpg 1x, ./images/portfolio/tablet/tport-4@2x.jpg 2x"
+                    media="(min-width: 768px)">
+                    <source srcset="./images/portfolio/mobile/mport-4.jpg 1x, ./images/portfolio/mobile/mport-4@2x.jpg 2x"
+                    media="(max-width: 767px)">
+                    <img src="./images/portfolio/desktop/port-4.jpg" alt="portfolio-4" width="360" />
+                  </picture>
                   <p class="gallary-wrapper-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                   Cloud Storage App</p>
                 </div>
@@ -110,7 +145,15 @@
             <li class="gallary-item">
               <a class="link gallary-link" href="">
                 <div class="gallary-wrapper-overlay">
-                  <img src="./images/portfolio/desktop/portfolio-5.jpg" alt="portfolio-1" width="360" />
+                  <picture>
+                    <source srcset="./images/portfolio/desktop/port-5.jpg 1x, ./images/portfolio/desktop/port-5@2x.jpg 2x"
+                    media="(min-width: 1158px)">
+                    <source srcset="./images/portfolio/tablet/tport-5.jpg 1x, ./images/portfolio/tablet/tport-5@2x.jpg 2x"
+                    media="(min-width: 768px)">
+                    <source srcset="./images/portfolio/mobile/mport-5.jpg 1x, ./images/portfolio/mobile/mport-5@2x.jpg 2x"
+                    media="(max-width: 767px)">
+                    <img src="./images/portfolio/desktop/port-5.jpg" alt="portfolio-5" width="360" />
+                  </picture>
                   <p class="gallary-wrapper-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                   Cloud Storage App</p>
                 </div>
@@ -123,7 +166,15 @@
             <li class="gallary-item">
               <a class="link gallary-link" href="">
                 <div class="gallary-wrapper-overlay">
-                  <img src="./images/portfolio/desktop/portfolio-6.jpg" alt="portfolio-1" width="360" />
+                  <picture>
+                    <source srcset="./images/portfolio/desktop/port-6.jpg 1x, ./images/portfolio/desktop/port-6@2x.jpg 2x"
+                    media="(min-width: 1158px)">
+                    <source srcset="./images/portfolio/tablet/tport-6.jpg 1x, ./images/portfolio/tablet/tport-6@2x.jpg 2x"
+                    media="(min-width: 768px)">
+                    <source srcset="./images/portfolio/mobile/mport-6.jpg 1x, ./images/portfolio/mobile/mport-6@2x.jpg 2x"
+                    media="(max-width: 767px)">
+                    <img src="./images/portfolio/desktop/port-6.jpg" alt="portfolio-6" width="360" />
+                  </picture>
                   <p class="gallary-wrapper-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                   Cloud Storage App</p>
                 </div>
@@ -136,7 +187,15 @@
             <li class="gallary-item">
               <a class="link gallary-link" href="">
                 <div class="gallary-wrapper-overlay">
-                  <img src="./images/portfolio/desktop/portfolio-7.jpg" alt="portfolio-1" width="360" />
+                  <picture>
+                    <source srcset="./images/portfolio/desktop/port-7.jpg 1x, ./images/portfolio/desktop/port-7@2x.jpg 2x"
+                    media="(min-width: 1158px)">
+                    <source srcset="./images/portfolio/tablet/tport-7.jpg 1x, ./images/portfolio/tablet/tport-7@2x.jpg 2x"
+                    media="(min-width: 768px)">
+                    <source srcset="./images/portfolio/mobile/mport-7.jpg 1x, ./images/portfolio/mobile/mport-7@2x.jpg 2x"
+                    media="(max-width: 767px)">
+                    <img src="./images/portfolio/desktop/port-7.jpg" alt="portfolio-7" width="360" />
+                  </picture>
                   <p class="gallary-wrapper-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                   Cloud Storage App</p>
                 </div>
@@ -149,7 +208,15 @@
             <li class="gallary-item">
               <a class="link gallary-link" href="">
                 <div class="gallary-wrapper-overlay">
-                  <img src="./images/portfolio/desktop/portfolio-8.jpg" alt="portfolio-1" width="360" />
+                  <picture>
+                    <source srcset="./images/portfolio/desktop/port-8.jpg 1x, ./images/portfolio/desktop/port-8@2x.jpg 2x"
+                    media="(min-width: 1158px)">
+                    <source srcset="./images/portfolio/tablet/tport-8.jpg 1x, ./images/portfolio/tablet/tport-8@2x.jpg 2x"
+                    media="(min-width: 768px)">
+                    <source srcset="./images/portfolio/mobile/mport-8.jpg 1x, ./images/portfolio/mobile/mport-8@2x.jpg 2x"
+                    media="(max-width: 767px)">
+                    <img src="./images/portfolio/desktop/port-8.jpg" alt="portfolio-8" width="360" />
+                  </picture>
                   <p class="gallary-wrapper-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                   Cloud Storage App</p>
                 </div>
@@ -162,7 +229,15 @@
             <li class="gallary-item">
               <a class="link gallary-link" href="">
                 <div class="gallary-wrapper-overlay">
-                  <img src="./images/portfolio/desktop/portfolio-9.jpg" alt="portfolio-1" width="360" />
+                  <picture>
+                    <source srcset="./images/portfolio/desktop/port-9.jpg 1x, ./images/portfolio/desktop/port-9@2x.jpg 2x"
+                    media="(min-width: 1158px)">
+                    <source srcset="./images/portfolio/tablet/tport-9.jpg 1x, ./images/portfolio/tablet/tport-9@2x.jpg 2x"
+                    media="(min-width: 768px)">
+                    <source srcset="./images/portfolio/mobile/mport-9.jpg 1x, ./images/portfolio/mobile/mport-9@2x.jpg 2x"
+                    media="(max-width: 767px)">
+                    <img src="./images/portfolio/desktop/port-9.jpg" alt="portfolio-9" width="360" />
+                  </picture>
                   <p class="gallary-wrapper-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                   Cloud Storage App</p>
                 </div>
@@ -233,5 +308,73 @@
         </div>
       </div>
     </footer>
+
+
+    <div class="mobile-modal js-menu-container">
+      <button class="js-close-menu mobile-close-btn" type="button">
+        <svg class="mobile-svg" width="8" height="8">
+          <use href="./images/icons.svg#closebtn"></use>
+        </svg>
+      </button>
+      <nav class="mobile-nav">
+        <ul>
+          <li>
+            <a href="">Studio</a>
+          </li>
+          <li>
+            <a href="">Portfolio</a>
+          </li>
+          <li>
+            <a href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="mobile-address">
+        <ul>
+          <li>
+            <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+      </address>
+      <ul class="footer-social-list list">
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="">
+            <svg class="footer-social-svg" width="24" height="24">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="">
+            <svg class="footer-social-svg" width="24" height="24">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="">
+            <svg class="footer-social-svg" width="24" height="24">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="">
+            <svg class="footer-social-svg" width="24" height="24">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
+
   </body>
 </html>

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
@@ -23,14 +24,19 @@
         </nav>
         <address class="header-contacts">
           <ul class="list address-list">
-            <li>
+            <li class="address-item">
               <a class="header-address-contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li>
+            <li class="address-item">
               <a class="header-address-contact link" href="tel:+110001111111">+11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
+        <button class="button-burger js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="burger-icon" width="32" height="22">
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -51,10 +57,12 @@
                 </svg>
               </div>
               <h3 class="section-one-subtitle">Strategy</h3>
-              <p class="section-one-text">
-                Our goal is to identify the business problem to walk away with the
-                perfect and creative solution.
-              </p>
+              <div class="section-one-wrapper-text">
+                <p class="section-one-text">
+                  Our goal is to identify the business problem to walk away with the
+                  perfect and creative solution.
+                </p>
+              </div>
             </li>
             <li class="section-one-item">
               <div class="section-one-icon">
@@ -63,10 +71,12 @@
                 </svg>
               </div>
               <h3 class="section-one-subtitle">Punctuality</h3>
-              <p class="section-one-text">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
-              </p>
+              <div class="section-one-wrapper-text">
+                <p class="section-one-text">
+                  Bring the key message to the brand's audience for the best price
+                  within the shortest possible time.
+                </p>
+              </div>
             </li>
             <li class="section-one-item">
               <div class="section-one-icon">
@@ -75,10 +85,12 @@
                 </svg>
               </div>
               <h3 class="section-one-subtitle">Diligence</h3>
-              <p class="section-one-text">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
-              </p>
+              <div class="section-one-wrapper-text">
+                <p class="section-one-text">
+                  Research and confirm brands that present the strongest digital
+                  growth opportunities and minimize risk.
+                </p>
+              </div>
             </li>
             <li class="section-one-item">
               <div class="section-one-icon">
@@ -87,10 +99,12 @@
                 </svg>
               </div>
               <h3 class="section-one-subtitle">Technologies</h3>
-              <p class="section-one-text">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
-              </p>
+              <div class="section-one-wrapper-text">
+                <p class="section-one-text">
+                  Design practice focused on digital experiences. We bring forth a
+                  deep passion for problem-solving.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -100,19 +114,13 @@
           <h2 class="section-two-title">What are we doing</h2>
           <ul class="list section-two-container">
             <li class="section-two-item">
-              <picture>
-                <img src="./images/doing/desktop.jpg" alt="desktop" width="360" />
-              </picture>
+              <img src="./images/doing/desktop.jpg" alt="desktop" width="360" />
             </li>
             <li class="section-two-item">
-              <picture>
-                <img src="./images/doing/phones.jpg" alt="phones" width="360" />
-              </picture>
+              <img src="./images/doing/phones.jpg" alt="phones" width="360" />
             </li>
             <li class="section-two-item">
-              <picture>
-                <img src="./images/doing/layout.jpg" alt="layout" width="360" />
-              </picture>
+              <img src="./images/doing/layout.jpg" alt="layout" width="360" />
             </li>
           </ul>
         </div>
@@ -123,9 +131,7 @@
           <ul class="list section-three-container">
             <li class="section-three-wrapper">
               <picture>
-                <source srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x" media="(min-width:1200px)">
-                <source srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x" media="(min-width:768px)">
-                <source srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x" media="(max-width:767px)">
+                <source srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x">
                 <img src="./images/team-1.jpg" alt="team-1" width="264" />
               </picture>
               <div class="section-three-description">
@@ -165,9 +171,7 @@
             </li>
             <li class="section-three-wrapper">
               <picture>
-                <source srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x" media="(min-width:1200px)">
-                <source srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x" media="(min-width:768px)">
-                <source srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x" media="(max-width:767px)">
+                <source srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x">
                 <img src="./images/team-2.jpg" alt="team-2" width="264" />
               </picture>
               <div class="section-three-description">
@@ -207,9 +211,7 @@
             </li>
             <li class="section-three-wrapper">
               <picture>
-                <source srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x" media="(min-width:1200px)">
-                <source srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x" media="(min-width:768px)">
-                <source srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x" media="(max-width:767px)">
+                <source srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x">
                 <img src="./images/team-3.jpg" alt="team-3" width="264" />
               </picture>
               <div class="section-three-description">
@@ -249,9 +251,7 @@
             </li>
             <li class="section-three-wrapper">
               <picture>
-                <source srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x" media="(min-width:1200px)">
-                <source srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x" media="(min-width:768px)">
-                <source srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x" media="(max-width:767px)">
+                <source srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x">
                 <img src="./images/team-4.jpg" alt="team-4" width="264" />
               </picture>
               <div class="section-three-description">
@@ -453,6 +453,74 @@
         </form>
       </div>
     </div>
+
+    <div class="mobile-modal js-menu-container">
+      <button class="js-close-menu mobile-close-btn" type="button">
+        <svg class="mobile-svg" width="8" height="8">
+          <use href="./images/icons.svg#closebtn"></use>
+        </svg>
+      </button>
+      <nav class="mobile-nav">
+        <ul>
+          <li>
+            <a href="">Studio</a>
+          </li>
+          <li>
+            <a href="">Portfolio</a>
+          </li>
+          <li>
+            <a href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="mobile-address">
+        <ul>
+          <li>
+            <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+      </address>
+      <ul class="footer-social-list list">
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="">
+            <svg class="footer-social-svg" width="24" height="24">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="">
+            <svg class="footer-social-svg" width="24" height="24">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="">
+            <svg class="footer-social-svg" width="24" height="24">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="">
+            <svg class="footer-social-svg" width="24" height="24">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
+
   </body>
 </html>
