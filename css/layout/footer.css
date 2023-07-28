@@ -122,7 +122,7 @@
 }
 
 .footer-input-btn:focus {
-  background-color: var(--ocean);
+  background-color: var(--green);
 }
 
 .footer-input-icon {
