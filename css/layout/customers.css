@@ -1,7 +1,7 @@
 /* ======================= SECTION FOUR ================== */
 
 .section-four {
-  padding: 96px 16px;
+  padding: 96px 0;
 }
 
 .section-four-title {
@@ -16,14 +16,14 @@
 }
 
 .section-four-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 72px 16px;
   justify-content: center;
 }
 
 .section-four-item {
-  width: 190px;
+  flex-basis: calc((100% - 16px * 1) / 2);
   height: 88px;
 }
 
@@ -51,30 +51,24 @@
 }
 
 @media screen and (min-width: 768px) {
-  .section-four {
-    padding: 96px 108px;
-  }
   .section-four-list {
-    grid-template-columns: repeat(3, 1fr);
     gap: 72px 24px;
   }
+
   .section-four-item {
-    margin: 0 auto;
-    width: 168px;
+    flex-basis: calc((100% - 24px * 2) / 3);
+    height: 88px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .section-four {
-    padding: 120px 156px;
+    padding: 120px 0;
   }
-  .section-four-list {
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-  }
+
   .section-four-item {
-    width: calc((100% - 120px) / 6);
+    flex-basis: calc((100% - 24px * 5) / 6);
+    height: 88px;
   }
 
   .section-four-link:hover {

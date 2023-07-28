@@ -32,11 +32,15 @@
 
 @media screen and (min-width: 768px) {
   .section-one-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 24px;
-    row-gap: 72px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
   }
+
+  .section-one-item {
+    flex-basis: calc((100% - 24px * 1) / 2);
+  }
+
   .section-one-subtitle {
     text-align: start;
   }
@@ -48,8 +52,6 @@
   }
 
   .section-one-list {
-    flex-direction: row;
-    display: flex;
     gap: 24px;
   }
   .section-one-item {

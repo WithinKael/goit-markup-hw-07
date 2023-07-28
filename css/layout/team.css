@@ -1,10 +1,7 @@
 /* ======================= TEAM ======================== */
 
 .section-three {
-  padding-top: 96px;
-  padding-bottom: 96px;
-  padding-right: 82px;
-  padding-left: 82px;
+  padding: 96px 0;
   background: var(--cloud);
 }
 
@@ -88,33 +85,30 @@
 }
 
 @media screen and (min-width: 768px) {
-  .section-three {
-    width: 768px;
+  .section-three-container {
+    max-width: 552px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 108px;
-    padding-right: 108px;
-  }
-  .section-three-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
     gap: 64px 24px;
   }
   .section-three-wrapper {
-    width: 264px;
+    width: calc((100% - 24px) / 2);
     height: 100%;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .section-three {
-    padding: 120px 156px;
-    width: 100%;
+    padding: 120px 0;
   }
   .section-three-container {
-    display: flex;
     gap: 24px;
-    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 100%;
   }
   .social-link:hover {
     background-color: var(--ocean);

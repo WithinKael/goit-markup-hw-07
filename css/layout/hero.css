@@ -2,10 +2,10 @@
 
 .section-hero {
   max-width: 428px;
-  padding: 112px 38px;
+  padding: 112px 0;
   margin-left: auto;
   margin-right: auto;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-image: linear-gradient(

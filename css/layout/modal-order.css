@@ -25,7 +25,8 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 392px;
+  width: 100%;
+  max-width: 392px;
   min-height: 584px;
   border-radius: 4px;
   background: var(--dairy);
@@ -271,7 +272,7 @@
 
 @media only screen and (min-width: 768px) {
   .backdrop {
-    width: 408px;
+    max-width: 408px;
     padding: 72px 25px 24px 23px;
   }
 }
